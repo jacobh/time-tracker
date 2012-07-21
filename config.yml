@@ -1,0 +1,14 @@
+development:
+  db:
+    adapter: mysql2
+    host: localhost
+    username: time-tracker
+    password: 
+    database: time-tracker-dev
+production:
+  db:
+    adapter: mysql2
+    host: localhost
+    username: root
+    password: 
+    database: time-tracker-prod

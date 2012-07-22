@@ -9,6 +9,6 @@ class User < ActiveRecord::Base
 
   def gravatar_url(size)
     hex = Digest::MD5.new.hexdigest email.downcase
-    "http://www.gravatar.com/avatar/#{hex}?=#{size}"
+    "http://www.gravatar.com/avatar/#{hex}?s=#{size}"
   end
 end

@@ -44,7 +44,7 @@ post "/signup" do
     session[:user_id] = @user.id
     "successfully signed you up!"
   else
-    "uh oh stuff went wrong"
+    "uh oh stuff went wrong: #{user.errors.full_messages.join ", "}"
   end
 end
 

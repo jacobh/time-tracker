@@ -5,6 +5,17 @@
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
+    <header class="wrap">
+        <h1>Time Tracker</h1>
+        <nav>
+            <li>Projects</li>
+        </nav>
+        <div class="user-info">
+            <% if @current_user %>
+            <img src="<%= @current_user.gravatar_url(30) %>">
+            <% end %>
+        </div>
+    </header>
   <%== yield %>
 </body>
 </html>

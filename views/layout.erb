@@ -2,19 +2,22 @@
 <html>
 <head>
   <title>Time Tracker</title>
+  <link rel="stylesheet" type="text/css" href="/normalize.css">
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
     <header class="wrap">
         <h1>Time Tracker</h1>
-        <nav>
-            <li>Projects</li>
-        </nav>
         <div class="user-info">
             <% if @current_user %>
-            <img src="<%= @current_user.gravatar_url(30) %>">
+                <img src="<%= @current_user.gravatar_url 30 %>">
+                <span><%= @current_user.name %></span>
+            <% else %>
+                <a href="/signup">Signup</a>
+                <a href="/login">Login</a>
             <% end %>
         </div>
+        <div class="clearfix"></div>
     </header>
   <%== yield %>
 </body>

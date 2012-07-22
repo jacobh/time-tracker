@@ -1,1 +1,6 @@
-<h1>Welcome to sinatra-barebones</h1>
+<section class="main wrap">
+    <% if @current_user %>
+        <h2><a href="/projects/">Projects</a></h2>
+        <h2><a href="/slips/">Slips</a></h2>
+    <% end %>
+</section>

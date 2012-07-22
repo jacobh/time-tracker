@@ -1,3 +1,25 @@
 body {
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wrap {
+    margin: 0 auto;
+    width: 960px;
+}
+.clearfix {
+    clear: both;
+}
+header {
+    border-bottom: solid 1px #E8ECEC;
+    h1 {
+        float: left;
+    }
+    .user-info {
+        float: right;
+        margin-top: 25px;
+        span {
+            display: inline-block;
+            margin: 7px 0 0 5px;
+            vertical-align: top;
+        }
+    }
 }

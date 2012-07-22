@@ -5,6 +5,7 @@ development:
     username: time-tracker
     password: 
     database: time-tracker-dev
+    pool: 20
 production:
   db:
     adapter: mysql2
